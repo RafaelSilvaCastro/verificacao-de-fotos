@@ -70,7 +70,7 @@ def verificar_produtos_sem_foto(caminho_excel, caminho_pasta_imagens, coluna_cod
             df_sem_foto.to_excel(nome_arquivo_saida, index=False) 
             print("-" * 50)
             print(f"✅ CONCLUÍDO! {len(df_sem_foto)} produtos foram encontrados sem foto.")
-            print(f"✅ O relatório contendo **APENAS OS PRODUTOS SEM FOTO** foi salvo em: **{nome_arquivo_saida}**")
+            print(f"✅ O relatório contendo **APENAS OS PRODUTOS SEM FOTO** foi salvo em:  **{nome_arquivo_saida}**")
             
             # Verificação de estoque
             if coluna_estoque in df_sem_foto.columns:
